@@ -1,13 +1,106 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-problems{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-problem{
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  width: 50%;
+}
+
+.example {
+  background-color: white;
+  color: black;
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.input-button {
+  margin: 20px 0;
+  background-color: #3E92CC;
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 2px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+input {
+  display: none;
+}
+
+.info {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+h1{
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+h2{
+  font-size: 26px;
+}
+
+.swal2-confirm{
+  border-radius: 8px;
+  padding: 6px 50px;
+  color: white;
+  border: none;
+  font-weight: 800;
+  font-size: 13px;
+  background-color: #3E92CC;
+  font-family: 'Open Sans', sans-serif;
+  outline: none;
+  cursor: pointer;
+}
+
+h2#swal2-title.swal2-title {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+
+div#swal2-html-container.swal2-html-container {
+  color: white;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width:700px){
+  .container-problems{
+    align-items: center;
+  }
+  .container-problem{
+    width: 100%;
+  }
 }
