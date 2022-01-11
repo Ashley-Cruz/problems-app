@@ -54,7 +54,7 @@ export const ProblemOne = () => {
 
     const createFile = (info) => {
         const blob = new Blob([ info ], { type: 'text/plain;charset=utf-8' });
-        saveAs( blob, 'problem2-results.txt' );
+        saveAs( blob, 'problem1-results.txt' );
     }
 
     const handleClick = () => {
